@@ -20,6 +20,6 @@ class PersonelSefi
             return $next($request);
         }
         else
-            return redirect('/');
+            return redirect('/admin');
     }
 }

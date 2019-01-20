@@ -20,6 +20,6 @@ class SatinAlma
             return $next($request);
         }
         else
-            return redirect('/');
+            return redirect('/admin');
     }
 }
