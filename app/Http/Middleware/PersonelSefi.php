@@ -16,7 +16,7 @@ class PersonelSefi
      */
     public function handle($request, Closure $next)
     {
-        if (Auth::check() && Auth::user()->yetki()==4){
+        if (Auth::check() && Auth::user()->yetki()==4 || Auth::user()->yetki()==1 || Auth::user()->yetki()==3){
             return $next($request);
         }
         else
